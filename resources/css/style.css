@@ -23,10 +23,7 @@ header .container {
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
 }
-.logo {
 
-
-}
 .logo img {
   height: 1.5rem;
   margin-left: 0.5rem;
@@ -72,115 +69,88 @@ header .container {
 }
 
 .topnav {
-  display: flex;
-  background-color:red;
-  height: 55px;
-  width: 100%;
-  font-size: 1.25rem;
-}
 
-.topnav span {
-  display:inline-block;
-  align-content: stretch;
-  padding: 20px 5%;
-}
-.topnav span a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
+  background-color:firebrick;
 
 }
 
-.maincontent {
+nav .container .topnav {
   display:flex;
-  width: 100%;
-  height:auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 2em;
+
 }
+
+.topnav span a {
+text-decoration: none;
+color: white;
+}
+
+
 
 .productgrid {
   display:flex;
-  width: 100%;
-  height:400px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
 
 }
-
-.product1 {
-  display:block;
-  flex-wrap:wrap;
-  background-image: url("../images/pen.png") ;
-  border: 3px solid black;
-  display: block;
-  width: 22%;
-  height: auto;
-  max-width: 100%;
-  max-height: 90%;
-  margin: 20px auto;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-
+.product {
+  width: 30%;
 }
-
-.product2 {
-  display:block;
-  flex-wrap:wrap;
-  background-image: url("../images/watch.png") ;
-  border: 3px solid black;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-  display: block;
-  width: 22%;
-  height: auto;
-  max-width: 100%;
-  max-height: 90%;
-  margin: 20px auto;
-}
-
-.product3 {
-  display:block;
-  flex-wrap:wrap;
-  background-image: url("../images/glasses.png") ;
-  border: 3px solid black;
-  display: block;
-  width: 22%;
-  height: auto;
-  max-width: 100%;
-  max-height: 90%;
-  margin: 20px auto;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center center;
-  overflow: hidden;
-}
-
-.bottomcontent {
+.productimage {
   display:flex;
-  width: 100%;
-  height: 250px;
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  justify-content: center;
+  align-items: center;
 }
-.location {
-  display: flex;
-  align-items:center;
+.productimage img {
+  max-width: 8em;
 }
-.location h2 {
-  display:block;
-  height: 75px;
-  width: 200px;
+
+.productname {
+  display: block;
   background-color: black;
   color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align:center;
-}
-.hours h2 {
-  display:block;
-  height: 75px;
-  width: 200px;
-  background-color: black;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
   text-align: center;
+  padding: 0.5em;
+}
+
+.watch {
+  width: 30%;
+}
+
+.glasses {
+  width: 30%;
+}
+
+
+
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.info {
+  width: 35%;
+  color:black;
+}
+.info-name {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+  margin-top: 4em;
+
 }
