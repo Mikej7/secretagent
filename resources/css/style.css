@@ -1,26 +1,36 @@
 html {
 font-family: helvetica;
+font-size: 18px;
+color: white;
 }
 body {
 
 }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 header {
-  display:flex;
 
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
 }
 .logo {
-  display:inline-flex;
-  width: 100%;
-  background-color: black;
-  padding-right: 25px;
+
+
 }
 .logo img {
-  height:30px;
-  width: auto;
-  padding-left: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
 
 }
 .logo p {
@@ -33,44 +43,32 @@ header {
 .mainbanner {
   display:flex;
   background-image: url("../images/moto.jpeg") ;
-  height: 450px;
-  width:  100%;
+  height: 25rem;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  align-items:center;
-  justify-content: center;
 }
+
 .mainheadline {
-  display: inline-block;
-  color: white;
+
   background-color:black;
-  width: 400px;
-  height:  240px;
-  font-family: helvetica;
-  align-content:left;
-  margin-right: 60%;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+  font-weight: bold;
 
 
 }
 .mainheadline p {
-  display:flex;
-  font-size: 1.5rem;
-  font-weight: bold;
-  justify-content: center;
-  align-items:left;
-  text-align:left;
-  margin-top: 80px;
-  margin-right: 170px;
-  padding-bottom: 30px;
+  font-size: 1rem;
+   line-height: 1.2em;
+   margin: 1em 0;
 }
 .mainheadline h1 {
-  display: flex;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  align-items:center;
-  justify-content: center;
+  font-size: 2rem;
+   margin-top: 0.25rem;
+   line-height: 1.2em;
 }
 
 .topnav {
