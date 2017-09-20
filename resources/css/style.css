@@ -6,151 +6,170 @@ color: white;
 body {
 
 }
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
+
 
 header {
-
-  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   background-color: black;
   font-size: 1rem;
 }
-header .container {
+.headercontainer {
   display: flex;
   align-items: center;
+  width: 960px;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
 }
 
-.logo img {
+header img {
   height: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 1rem;
 
 }
-.logo p {
-  display:inline-flex;
+header span {
   padding-left: 25px;
   align-items:center;
   font-size: 1.25rem;
   color: white;
 }
-.mainbanner {
+.banner {
   display:flex;
   background-image: url("../images/moto.jpeg") ;
   height: 25rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
 }
 
-.mainheadline {
+.bannercontainer {
 
-  background-color:black;
-  width: 20em;
-  padding: 2em 3em;
+  width: 960px;
+}
+
+.bannerbox {
+  background-color: black;
+  width: 20rem;
   position: relative;
-  top: 9em;
+  display: flex;
+  flex-direction: column;
+  top: 9rem;
+  padding: 2rem 3rem;
+  }
+
+h4, h1 {
+  color:white;
   font-weight: bold;
-
-
 }
-.mainheadline p {
+
+h4 {
   font-size: 1rem;
-   line-height: 1.2em;
-   margin: 1em 0;
-}
-.mainheadline h1 {
+  }
+
+h1 {
+  padding-top: 0.25rem;
   font-size: 2rem;
-   margin-top: 0.25rem;
-   line-height: 1.2em;
 }
 
-.topnav {
-
-  background-color:firebrick;
-
+nav {
+  display: flex;
+  background-color: firebrick;
+  justify-content: center;
+  width: 100%;
 }
 
-nav .container .topnav {
-  display:flex;
-  align-items: center;
+.navcontainer {
+  display: flex;
   justify-content: space-between;
-  padding: 0.75em 2em;
+  width: 960px;
+  padding: 0.75rem 0rem;
+  }
 
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.topnav span a {
-text-decoration: none;
-color: white;
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: solid 4px black;
+  align-content: center;
+  align-items: center;
 }
-
-
-
 .productgrid {
   display:flex;
+  flex-direction: row;
   justify-content: space-between;
+  width: 960px;
   margin: 3em 0 0 0;
 
 }
 .product {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px black solid;
+
 }
 .productimage {
-  display:flex;
-  border: 4px solid black;
-  padding: 2em 0;
-  height: 9em;
-  justify-content: center;
+  height: 9rem;
+  padding: 2rem 0rem;
+  display: flex;
   align-items: center;
 }
-.productimage img {
+
+.product img {
   max-width: 8em;
 }
 
-.productname {
-  display: block;
+.product span {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.5em 0rem;
+  width: 296px;
 }
 
-.watch {
-  width: 30%;
-}
-
-.glasses {
-  width: 30%;
-}
-
-
-
-
-.information {
+.infocontainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin: 3em 0 0 0;
+  width: 960px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
   width: 35%;
-  color:black;
+  color: black;
 }
 .info-name {
-  display: block;
   background-color: black;
   color: white;
-  padding: 1em 2em;
-
+  padding: 1rem 2rem;
+  margin-bottom: 0.5rem;
 }
 
 footer {
   background-color: black;
-  color: white;
-  padding: 5em 0;
-  margin-top: 4em;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  }
 
+  .copyright {
+    width: 960px;
+  }
+.copyright span {
+  text-align: left;
 }
