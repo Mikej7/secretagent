@@ -99,7 +99,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: solid 4px black;
+
   align-content: center;
   align-items: center;
 }
@@ -112,47 +112,50 @@ a {
 
 }
 .product {
-  width: 30%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 4px black solid;
 
+  width: 30%;
 }
 .product2 {
-  width: 30%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 4px black solid;
+  width: 30%;
 }
 .product3 {
-  width: 30%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 4px black solid;
+  width:30%;
 }
 .productimage {
   height: 9rem;
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
-
+  width: 30%;
 }
 .productimage2 {
   height: 9rem;
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
-
+  width: 30%;
 }
 .productimage3 {
   height: 9rem;
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
-
+  width: 30%;
 }
 .product img {
   max-width: 8em;
@@ -206,7 +209,7 @@ a {
   color: white;
   padding: 1rem 2rem;
   margin-bottom: 0.5rem;
-  
+
 }
 
 footer {
@@ -250,27 +253,47 @@ footer {
 }
 /* mobile phones responsive */
 
-@media only screen and (max-width: 470px) {
-
-  .banner .bannerbox {
+@media only screen and (max-width: 470px){
+  .bannercontainer {
     width: 100%;
+  }
+  .banner .bannerbox {
+    width: 90%;
     padding: 1em 2em;
-    top: 15em;
+    top: 21.25em;
+  }
+  .bannerbox {
+    width: 80%;
+    margin: auto;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .productgrid {
+    width: 100%;
   }
   .products {
     justify-content: center;
   }
   .product {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+    margin: 0.5em auto;
+  }
+  .productimage {
+
   }
   .product2 {
     display: none;
   }
-
+  .infocontainer {
+    width: 100%;
+  }
   .info {
     width: 90%;
-    margin: 0.5 auto;
+    margin: 0.5em auto;
   }
   .info-name {
     text-align:center;
@@ -278,7 +301,11 @@ footer {
  .info-name span {
    text-align:center;
  }
+ .info span {
+   text-align: center;
+ }
 footer {
+  width: 90%;
   text-align:center;
 }
 }
